@@ -23,6 +23,7 @@ nav a {
     text-decoration: none;
     color: #666; /* Dark gray color for headings */
     margin: 0 10px;
+    font-size: 14pt;
 }
 nav a:hover {
     text-decoration: underline;
