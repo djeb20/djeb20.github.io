@@ -1,0 +1,174 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* white background */
+    color: #000; /* black text */
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #fff; /* light gray background */
+    padding: 20px;
+    text-align: right; /* align header text to the right */
+    margin-bottom: 20px;
+}
+nav {
+    background-color: #fff; /* light gray background */
+    padding: 10px 0;
+}
+nav a {
+    text-decoration: none;
+    color: #000; /* black text */
+    margin: 0 10px;
+}
+section {
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-info img {
+    max-width: 150px; /* adjust image width as needed */
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px; /* adjust margin as desired */
+    /* border-radius: 50%; */
+}
+.contact-info p {
+    margin: 0;
+}
+.social-media-links a {
+    margin-right: 10px;
+}
+.social-media-links img {
+    width: 25px; /* Adjust the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0px; /* Reduce spacing between the images */
+    margin-left: 0px; /* Reduce spacing between the images */
+}
+.publication {
+line-height: 1.5; /* adjust line height as needed */
+margin-bottom: 20px; /* add space between publications */
+}
+.publication h3,
+.publication p {
+    margin: 0; /* remove default margin */
+    font-size: 16px; /* adjust font size as needed */
+}
+
+.publication-container {
+    display: flex;
+    align-items: center;
+}
+
+.publication-image {
+    margin-right: 20px; /* Adjust spacing between image and content */
+}
+
+.publication-image img {
+    width: 125px; /* Adjust image width as needed */
+    height: auto;
+}
+
+#talks {
+    padding: 20px;
+}
+
+.talk {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.talk-image {
+    margin-right: 20px; /* Adjust spacing between image and content */
+}
+
+.talk-image img {
+    width: 125px; /* Adjust image width as needed */
+    height: auto;
+}
+
+.talk-content {
+    flex-grow: 1;
+}
+
+.talk-content h3 {
+    margin-top: 0;
+}
+
+.talk-content p {
+    margin: 5px 0;
+}
+
+.talk-content a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.talk-content a:hover {
+    text-decoration: underline;
+}
+
+
+#teaching {
+    padding: 20px;
+}
+
+.teaching-subsection {
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    margin-right: 20px; /* Adjust spacing */
+}
+
+.logo-container img {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 10px; /* adjust margin as desired */
+    margin-left: 0px; /* adjust margin as desired */
+}
+
+.teaching-links {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.teaching-links h3 {
+    margin-top: 0;
+}
+
+.teaching-links p {
+    margin: 5px 0;
+}
+
+.teaching-links a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.teaching-links a:hover {
+    text-decoration: underline;
+}
+
+.research-subsection {
+    margin-bottom: 20px; /* Add space between subsections */
+}
+
+.research-subsection h3 {
+    margin-top: 0; /* Remove default margin */
+}
+
+.research-subsection p {
+    margin-bottom: 10px; /* Add space below paragraphs */
+}
