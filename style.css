@@ -181,6 +181,17 @@ margin-bottom: 20px; /* add space between publications */
     text-decoration: underline;
 }
 
+table {
+border-collapse: separate;
+border-spacing: 0;
+}
+td {
+padding: 0px; /* Adjust this value for column spacing */
+}
+tr {
+margin-bottom: 0px; /* Adjust this value for row spacing */
+}
+
 .research-subsection {
     margin-bottom: 20px; /* Add space between subsections */
     padding: 20px; /* Add padding to create space within the box */
