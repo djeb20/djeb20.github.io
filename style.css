@@ -29,6 +29,7 @@ nav a:hover {
 }
 section {
     padding: 20px;
+    margin-bottom: -40px;
 }
 /* Header and Section Titles */
 h1 {
@@ -70,7 +71,7 @@ h1, h2, h3 {
     margin-left: 0px; /* Reduce spacing between the images */
 }
 .news-list li {
-    margin-bottom: 10px; /* Adjust the margin bottom as needed */
+    margin-bottom: 3px; /* Adjust the margin bottom as needed */
 }
 .publication {
 line-height: 1.5; /* adjust line height as needed */
