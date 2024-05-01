@@ -70,8 +70,15 @@ h1, h2, h3 {
     margin-right: 0px; /* Reduce spacing between the images */
     margin-left: 0px; /* Reduce spacing between the images */
 }
+#news {
+    margin-bottom: -20px; /* Adjust as needed */
+}
+.news-list-container {
+    height: 300px; /* Set the desired height for the list container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
 .news-list li {
-    margin-bottom: 3px; /* Adjust the margin bottom as needed */
+    margin-bottom: 10px; /* Increase the margin bottom to add more space between bullet points */
 }
 .publication {
 line-height: 1.5; /* adjust line height as needed */
