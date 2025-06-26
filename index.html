@@ -12,8 +12,7 @@
 <body>
     <header>
         <nav style="font-size: 14pt;">
-            <a href="#research">Research</a>
-            <a href="#papers">Papers</a>
+            <a href="#papers">Research</a>
             <a href="#talks">Talks</a>
             <a href="#teaching">Teaching</a>
         </nav>
@@ -23,33 +22,36 @@
             <img src="assets/face.jpg" alt="Your Name">
             <div>
                 <h1>Daniel Beechey</h1>
-                <p>Research Scientist | PhD Student</p>
+                <p>Research Scientist</p>
                 <p>Huawei Noah's Ark Lab, London, United Kingdom</p>
-                <p style="margin-bottom: 10px;">University of Bath, United Kingdom</p>
-                <p>daniel DOT beechey AT h-partners DOT com</p>
-                <p style="margin-bottom: 10px;">djeb20 AT bath DOT ac DOT uk</p>
+                
+                <!-- Email image, styled to align with other text and prevent cropping -->
+                <div style="display: block; margin: 0; padding: 0;">
+                <img src="assets/email.png" alt="Email address" 
+                    style="display: block; border-radius: 0; height: 16px; width: auto; margin: 6px 0 8px -1.5px; padding: 0;">
+                </div>
+
+
                 <div class="social-media-links">
                     <a href="assets/cv_daniel_beechey.pdf" target="_blank"><img src="assets/cv.svg" alt="CV"></a>
                     <a href="https://scholar.google.com/citations?user=gNqlmyEAAAAJ&hl=en&oi=sra" target="_blank"><img src="assets/scholar_logo.svg" alt="Google Scholar"></a>
                     <a href="https://www.linkedin.com/in/dan-beechey/" target="_blank"><img src="assets/linkedin_logo.svg" alt="LinkedIn"></a>
-                    <a href="https://twitter.com/Beech_AI" target="_blank"><img src="assets/twitter_logo.svg" alt="Twitter"></a>
                     <a href="https://github.com/djeb20" target="_blank"><img src="assets/github_logo.svg" alt="GitHub"></a>
                 </div>
             </div>
         </div>
         <section id="summary">
-            <p> I am a research scientist at Huawei Noah's Ark Lab. Previously, I was a PhD student at the Bath Reinforcement Learning Lab, supervised by <a
+            <p> I am a research scientist at Huawei Noah's Ark Lab. Previously, I was a PhD student as part of the Bath Reinforcement Learning Lab, supervised by <a
                 href="https://scholar.google.com/citations?user=z1BYZG0AAAAJ&hl=en&oi=ao" target="_blank">Özgür
                 Şimşek</a>. I'm interested in all things reinforcement learning, particularly questioning the basic building blocks we use to study and create artificial intelligence.
-            <!-- <p> <strong>Research Summary:</strong> I am interested in the capacity of AI systems with limited resources to acquire generalisable behaviours that facilitate continual learning. Specifically, I focus on two main areas: discovering broad and generalised skills that allow for continual adaption to change and explaining the behaviour of these agents by revealing how they are influenced by their observations. For further details, please refer to the <a href="#research">research</a> section below. -->
         </section>
         <section id="news">
             <h2>News</h2>
             <div class="news-list-container">
                 <ul class="news-list">
-                    <li><strong>Jun. 2025:</strong> New paper: <a href="https://arxiv.org/pdf/2505.07797?" target="_blank">A Theoretical Framework for Explaining Reinforcement Learning with Shapley Values.</a></li>
+                    <li><strong>Jun. 2025:</strong> New paper: <a href="https://arxiv.org/pdf/2505.07797?" target="_blank">A Theoretical Framework for Explaining Reinforcement Learning with Shapley Values</a>.</li>
                     <li><strong>Jun. 2025:</strong> Joinined the AI Agent group at Huawei Noah's Ark Lab as a Research Scientist!</li>
-                    <li><strong>Jun. 2025:</strong> Presented a poster at the <a href="https://rldm.org/" target="_blank">2025 Multi-disciplinary Conference on Reinforcement Learning and Decision Making (RLDM)</a>.</li>
+                    <li><strong>Jun. 2025:</strong> Presented a poster at the <a href="https://rldm.org/" target="_blank">2025 Multi-disciplinary Conference on Reinforcement Learning and Decision Making (RLDM)</a>. <a href="assets/fastsverl_poster_2025_rldm.pdf" target="_blank">Poster</a>.</li>
                     <li><strong>Feb. 2025:</strong> Gave a talk as part of the ART-AI colloquium series. <a href="assets/sverl_30min_2025colloquium.pdf">Slides</a>.</li>
                     <li><strong>Oct. 2024:</strong> Presenting a poster at the <a href="https://ewrl.wordpress.com/ewrl17-2024/" target="_blank">17<sup>th</sup> European Workshop on Reinforcement Learning (EWRL)</a>. <a href="assets/sverl_poster_2024_ewrl.pdf" target="_blank">Poster</a>.</li>
                     <li><strong>Sep. 2024:</strong> Attended the <a href="https://www.m2lschool.org/" target="_blank">Mediterranean Machine Learning Summer School</a>. <a href="assets/sverl_poster_2024_m2l.pdf" target="_blank">Poster</a>.</li>
@@ -73,18 +75,9 @@
             <p>If work ever makes it into media then write about it here.</p>
         </section> -->
         <section id="research">
-            <h2>Research</h2>
-            <p>My research aims to (1) uncover general skills for agents operating under contrained resources, enabling continual adaptation to new and diverse tasks, and (2) explain the behaviour of agents in terms of policy and performance.</p>
-            <div class="research-subsection">
-                <h3><strong>Explaining Agent Behaviour</strong></h3>
-                <p>An agent's behaviour can be explained by their policy, but this mapping from states to distributions over actions can be arbitraily opaque. How can we explain the behaviour of agents by revealing how they were influenced by the features of their observations?</p>
-                <a href="https://proceedings.mlr.press/v202/beechey23a/beechey23a.pdf" target="_blank">Explaining Reinforcement Learning with Shapley Values</a> [ICML 2023]
-            </div>
-        
-            <div class="research-subsection">
-                <h3><strong>Discovering General Skills</strong></h3>
-                <p> All forms of intelligence are constrained by time and computational resources. Humans minimise planning efforts by learning hierarchical behaviours, enabling quick adaptation to new challenges. How can an agent discover and learn a collection of skills to continually adapt to change?</p>
-            </div>
+            <h2>Interests</h2>
+            <p>Since the start of my PhD, I have been interested in identifying and explaining key aspects of artificial agents interacting with their environments: behaviour, performance and prediction. Recently, I have been using the lense of bounded rationality to explore how fundamental mechanisms of intelligence—such as representations, hierarchy and continual learning—naturally emerge as necessary conditions of resource-constrained agents. This has led me to question the philosophical foundations of reinforcement learning: what is an agent, and how do our assumptions shape the algorithms and conceptual models we design and build?</p>
+            
         </section>
         <section id="papers">
             <h2>Papers</h2>
@@ -95,7 +88,7 @@
                         <img src="assets/roadsign_example.png" alt="Extended SVERL Image">
                     </div>
                     <div class="publication-content">
-                        <h3><strong>Theoretical Framework for Explaining Reinforcement Learning with Shapley Values</strong> </h3>
+                        <h3><strong>A Theoretical Framework for Explaining Reinforcement Learning with Shapley Values</strong> </h3>
                         <p><strong>Daniel Beechey</strong>, Thomas M. S. Smith, Özgür Şimşek</p>
                         <p>2025</p>
                         <p><a href="https://arxiv.org/pdf/2505.07797?" target="_blank">Paper</a> | <a href="https://github.com/djeb20/sverl" target="_blank">Code</a></p>
@@ -109,7 +102,7 @@
                         <img src="assets/sverl_icml_thumbnail.png" alt="ICML SVERL Image">
                     </div>
                     <div class="publication-content">
-                        <h3><strong>Reinforcement Learning with Shapley Value</strong> s</h3>
+                        <h3><strong>Explaining Reinforcement Learning with Shapley Values</strong></h3>
                         <p><strong>Daniel Beechey</strong>, Thomas M. S. Smith, Özgür Şimşek</p>
                         <p>ICML 2023</p>
                         <p><a href="https://proceedings.mlr.press/v202/beechey23a/beechey23a.pdf" target="_blank">Paper</a> | <a href="https://github.com/bath-reinforcement-learning-lab/SVERL_icml_2023" target="_blank">Code</a> | <a href="assets/sverl_poster_2023_icml.pdf" target="_blank">Poster</a></p>
@@ -123,7 +116,7 @@
                         <img src="assets/chem_thumbnail.jpeg" alt="Chemistry Image">
                     </div>
                     <div class="publication-content">
-                        <h3><strong>Reactivity Design for Data-Efficient Machine Learning</strong> </h3>
+                        <h3><strong>Reformulating Reactivity Design for Data-Efficient Machine Learning</strong> </h3>
                         <p>Toby Lewis-Atwell, <strong>Daniel Beechey</strong>, Özgür Şimşek and Matthew N. Grayson</p>
                         <p>ACS Catalysis, 13(20), 2023</p>
                         <p><a href="https://pubs.acs.org/doi/full/10.1021/acscatal.3c02513" target="_blank">Paper</a> | <a href="https://github.com/the-grayson-group/finding_barriers" target="_blank">Code</a></p>
