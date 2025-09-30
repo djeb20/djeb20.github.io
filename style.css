@@ -1,19 +1,20 @@
 /* style.css */
 
 body {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    background-color: #fff; /* White background */
-    color: #000; /* Black text */
+    font-family: 'Source Sans Pro', sans-serif; /* Changed from Arial */
+    font-size: 15px; /* Slightly larger for readability */
+    line-height: 1.6; /* Increased for better spacing between lines */
+    background-color: #f8f9fa; /* White background */
+    color: #343a40; /* Black text */
     margin: 0;
     padding: 0;
 }
 header {
     background-color: #fff; /* Light gray background */
-    padding: 20px;
     text-align: right; /* Align header text to the right */
     margin-bottom: 20px;
+    border-bottom: 1px solid #dee2e6; /* Add a light grey bottom border */
+    padding: 15px 20px; /* Adjust padding */
 }
 nav {
     background-color: #fff; /* light gray background */
@@ -21,10 +22,19 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: #666; /* Dark gray color for headings */
+    color: #555; /* Dark gray color for headings */
+    font-weight: 600; /* Make nav links a bit bolder */
     margin: 0 10px;
 }
 nav a:hover {
+    text-decoration: underline;
+}
+/* Define a consistent link style */
+a {
+    color: #0056b3; /* A professional blue */
+    text-decoration: none;
+}
+a:hover {
     text-decoration: underline;
 }
 section {
@@ -39,7 +49,8 @@ h2 {
     font-size: 20pt;
 }
 h1, h2, h3 {
-    font-weight: normal; /* Remove bold font weight */
+    font-family: 'Lato', sans-serif; /* Use Lato for headings */
+    font-weight: 700; /* Make headings bolder */
 }
 .container {
     max-width: 800px;
@@ -76,11 +87,11 @@ h1, h2, h3 {
     margin-bottom: -20px; /* Adjust as needed */
 }
 .news-list-container {
-    height: 300px; /* Set the desired height for the list container */
-    overflow-y: auto; /* Enable vertical scrolling */
+    height: auto; /* Remove fixed height */
+    overflow-y: visible; /* Remove scrollbar */
 }
 .news-list li {
-    margin-bottom: 10px; /* Increase the margin bottom to add more space between bullet points */
+    margin-bottom: 5px; /* Increase the margin bottom to add more space between bullet points */
 }
 .publication {
 line-height: 1.5; /* adjust line height as needed */
@@ -103,6 +114,21 @@ margin-bottom: 20px; /* add space between publications */
 .publication-image img {
     width: 125px; /* Adjust image width as needed */
     height: auto;
+}
+
+.publication, .talk {
+    line-height: 1.5; 
+    margin-bottom: 25px; 
+    border: 1px solid #e9ecef; /* Add a very light border */
+    padding: 15px;
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #fff; /* Give them a white background to stand out */
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+.publication:hover, .talk:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Add a soft shadow on hover */
+    transform: translateY(-3px); /* Slightly lift the box on hover */
 }
 
 #talks {
