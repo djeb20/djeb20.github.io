@@ -178,8 +178,7 @@ margin-bottom: 20px; /* add space between publications */
 }
 
 .teaching-subsection {
-    display: flex;
-    align-items: center; /* Center vertically */
+    display: block;
     margin-bottom: 20px;
 }
 
@@ -228,6 +227,36 @@ tr {
 margin-bottom: 0px; /* Adjust this value for row spacing */
 }
 
+/* Semantic teaching list styles (replaces table layout for responsiveness) */
+.teaching-list {
+    margin: 0;
+    padding: 0;
+}
+.teaching-list dt {
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+.teaching-list dd {
+    margin: 0 0 8px 18px; /* indent items slightly */
+    line-height: 1.45;
+}
+
+/* Make the teaching subsection more compact on small screens */
+@media (max-width: 520px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-info img {
+        margin-left: 0;
+        margin-bottom: 12px;
+    }
+    .publication-image img, .talk-image img {
+        width: 100px;
+    }
+}
+
 .research-subsection {
     margin-bottom: 20px; /* Add space between subsections */
     padding: 20px; /* Add padding to create space within the box */
@@ -242,4 +271,10 @@ margin-bottom: 0px; /* Adjust this value for row spacing */
 
 .research-subsection p {
     margin-bottom: 10px; /* Add space below paragraphs */
+}
+
+.email {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
 }
