@@ -154,22 +154,10 @@ margin-bottom: 20px; /* add space between publications */
     flex-grow: 1;
 }
 
-.talk-content h3 {
-    margin-top: 0;
-}
-
+.talk-content h3,
 .talk-content p {
-    margin: 0; /* Remove default margin */
+    margin: 0; /* Remove default margin to match publications */
     line-height: 1.5; /* Set line height to match publications section */
-}
-
-.talk-content a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.talk-content a:hover {
-    text-decoration: underline;
 }
 
 
@@ -205,15 +193,6 @@ margin-bottom: 20px; /* add space between publications */
 .teaching-links p {
     margin: 0px 0;
     line-height: 1.5; /* Set line height to match publications section */
-}
-
-.teaching-links a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.teaching-links a:hover {
-    text-decoration: underline;
 }
 
 table {
