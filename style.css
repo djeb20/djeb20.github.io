@@ -37,6 +37,12 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.copy-break {
+    display: block;
+    height: 0.45em;
+}
+
 section {
     padding: 20px;
     margin-bottom: -40px;
@@ -116,7 +122,7 @@ margin-bottom: 20px; /* add space between publications */
     height: auto;
 }
 
-.publication, .talk {
+.publication, .talk, .project {
     line-height: 1.5; 
     margin-bottom: 25px; 
     border: 1px solid #e9ecef; /* Add a very light border */
@@ -126,7 +132,7 @@ margin-bottom: 20px; /* add space between publications */
     transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out; /* Smooth transition */
 }
 
-.publication:hover, .talk:hover {
+.publication:hover, .talk:hover, .project:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Add a soft shadow on hover */
     transform: translateY(-3px); /* Slightly lift the box on hover */
 }
@@ -160,66 +166,64 @@ margin-bottom: 20px; /* add space between publications */
     line-height: 1.5; /* Set line height to match publications section */
 }
 
+.project h3,
+.project p {
+    margin: 0;
+}
+
 
 #teaching {
     padding: 20px;
 }
 
-.teaching-subsection {
-    display: block;
-    margin-bottom: 20px;
-}
-
-.logo-container {
-    margin-right: 20px; /* Adjust spacing */
-}
-
-.logo-container img {
-    width: 150px; /* Adjust width as needed */
-    height: auto;
-    margin-right: 10px; /* adjust margin as desired */
-    margin-left: 0px; /* adjust margin as desired */
-}
-
-.teaching-links {
-    flex-grow: 1;
-    text-align: left;
-}
-
-.teaching-links h3 {
+.teaching-intro {
     margin-top: 0;
+    margin-bottom: 18px;
 }
 
-.teaching-links p {
-    margin: 0px 0;
-    line-height: 1.5; /* Set line height to match publications section */
+.teaching-role {
+    margin-bottom: 25px;
+    border: 1px solid #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-table {
-border-collapse: separate;
-border-spacing: 0;
-}
-td {
-padding: 0px; /* Adjust this value for column spacing */
-}
-tr {
-margin-bottom: 0px; /* Adjust this value for row spacing */
+.teaching-role:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
 }
 
-/* Semantic teaching list styles (replaces table layout for responsiveness) */
-.teaching-list {
+.teaching-role h3,
+.teaching-role p {
     margin: 0;
+}
+
+.teaching-role-meta {
+    color: #555;
+    margin-top: 2px;
+}
+
+.teaching-items {
+    margin: 12px 0 0 18px;
     padding: 0;
 }
-.teaching-list dt {
-    font-weight: 700;
-    margin-top: 12px;
-    margin-bottom: 4px;
-}
-.teaching-list dd {
-    margin: 0 0 8px 18px; /* indent items slightly */
+
+.teaching-items li {
+    margin-bottom: 8px;
     line-height: 1.45;
 }
+
+.teaching-item-rich span {
+    display: block;
+}
+
+.teaching-item-links {
+    margin-top: 2px;
+    color: #555;
+}
+
 
 /* Make the teaching subsection more compact on small screens */
 @media (max-width: 520px) {
@@ -257,3 +261,4 @@ margin-bottom: 0px; /* Adjust this value for row spacing */
   direction: rtl;
   text-align: left;
 }
+
