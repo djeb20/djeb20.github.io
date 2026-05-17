@@ -10,11 +10,14 @@ body {
     padding: 0;
 }
 header {
-    background-color: #fff; /* Light gray background */
-    text-align: right; /* Align header text to the right */
+    background-color: #fff;
+    text-align: right;
     margin-bottom: 20px;
-    border-bottom: 1px solid #dee2e6; /* Add a light grey bottom border */
-    padding: 15px 20px; /* Adjust padding */
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 nav {
     background-color: #fff; /* light gray background */
@@ -84,20 +87,47 @@ h1, h2, h3 {
     margin-right: 10px;
 }
 .social-media-links img {
-    width: 25px; /* Adjust the width of the images */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 0px; /* Reduce spacing between the images */
-    margin-left: 0px; /* Reduce spacing between the images */
+    width: 25px;
+    height: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 0;
 }
 #news {
     margin-bottom: -20px; /* Adjust as needed */
 }
 .news-list-container {
-    height: auto; /* Remove fixed height */
-    overflow-y: visible; /* Remove scrollbar */
+    height: auto;
+    overflow-y: visible;
+}
+.news-list {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+.news-list::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    bottom: 4px;
+    width: 2px;
+    background-color: #dee2e6;
 }
 .news-list li {
-    margin-bottom: 5px; /* Increase the margin bottom to add more space between bullet points */
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+.news-list li::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0056b3;
 }
 .publication {
 line-height: 1.5; /* adjust line height as needed */
