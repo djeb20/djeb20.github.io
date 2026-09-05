@@ -196,6 +196,43 @@ margin-bottom: 20px; /* add space between publications */
     line-height: 1.5; /* Set line height to match publications section */
 }
 
+.talk-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
+}
+
+.talk-date,
+.teaching-year {
+    color: #777;
+    white-space: nowrap;
+}
+
+.teaching-columns {
+    columns: 2;
+    column-gap: 40px;
+}
+
+.teaching-columns li {
+    break-inside: avoid;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+}
+
+.paper-posters {
+    margin-top: 2px;
+}
+
+.news-mention {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #c8c8c8;
+    text-underline-offset: 2px;
+}
+
 .project h3,
 .project p {
     margin: 0;
@@ -204,11 +241,6 @@ margin-bottom: 20px; /* add space between publications */
 
 #teaching {
     padding: 20px;
-}
-
-.teaching-intro {
-    margin-top: 0;
-    margin-bottom: 18px;
 }
 
 .teaching-role {
@@ -236,8 +268,9 @@ margin-bottom: 20px; /* add space between publications */
 }
 
 .teaching-items {
-    margin: 12px 0 0 18px;
+    margin: 12px 0 0;
     padding: 0;
+    list-style: none;
 }
 
 .teaching-items li {
@@ -267,6 +300,13 @@ margin-bottom: 20px; /* add space between publications */
     }
     .publication-image img, .talk-image img {
         width: 100px;
+    }
+    .talk-line {
+        flex-direction: column;
+        gap: 0;
+    }
+    .teaching-columns {
+        columns: 1;
     }
 }
 
